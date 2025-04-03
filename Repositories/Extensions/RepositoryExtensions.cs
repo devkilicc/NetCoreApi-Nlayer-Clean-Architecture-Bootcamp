@@ -17,6 +17,7 @@ namespace App.Repositories.Extensions
                         npgsqlOptionsAction.MigrationsAssembly(typeof(RepositoryAssembly).Assembly.FullName);
                     });
             });
+
             return services;
         }
 
