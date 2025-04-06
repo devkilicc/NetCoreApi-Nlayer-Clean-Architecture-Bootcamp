@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace App.Repositories.Products
 {
-    internal class ProductRepository(AppDbContext context) : GenericRepository<Product>(context), IProductRepository
+    public class ProductRepository(AppDbContext context) : GenericRepository<Product>(context), IProductRepository
     {
         public Task<List<Product>> GetTopPriceProductAsync(int count)
         {
